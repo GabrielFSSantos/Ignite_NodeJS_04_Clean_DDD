@@ -11,8 +11,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
     "@types/node": "^20.6.5",
+    "eslint": "^8.50.0",
     "typescript": "^5.2.2",
     "vitest": "^0.34.5"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10"
   }
 }
