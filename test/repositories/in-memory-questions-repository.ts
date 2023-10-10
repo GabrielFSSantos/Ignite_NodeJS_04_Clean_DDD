@@ -2,9 +2,19 @@ import { QuestionsRepository } from '@/domain/forum/application/repositories/que
 import { Question } from '@/domain/forum/enterprise/entities/question'
 
 export class InMemoryQuestionsRepository implements QuestionsRepository {
-  public itens: Question[] = []
+  public items: Question[] = []
+
+  async findBySlug(slug: string) {
+    const question = this.items.find((item) => item.slug.value === slug)
+
+    if (!question) {
+      return null
+    }
+
+    return question
+  }
 
   async create(question: Question): Promise<void> {
-    this.itens.push(question)
+    this.items.push(question)
   }
 }
