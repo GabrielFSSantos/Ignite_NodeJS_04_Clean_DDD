@@ -32,12 +32,12 @@ describe('Fetch Recent Question Comments', () => {
       }),
     )
 
-    const { questioncomments } = await sut.execute({
+    const result = await sut.execute({
       questionId: 'question-1',
       page: 1,
     })
 
-    expect(questioncomments).toHaveLength(3)
+    expect(result.value?.questioncomments).toHaveLength(3)
   })
 
   it('should be able to fetch paginated question question comments', async () => {
@@ -49,11 +49,11 @@ describe('Fetch Recent Question Comments', () => {
       )
     }
 
-    const { questioncomments } = await sut.execute({
+    const result = await sut.execute({
       questionId: 'question-1',
       page: 2,
     })
 
-    expect(questioncomments).toHaveLength(2)
+    expect(result.value?.questioncomments).toHaveLength(2)
   })
 })
