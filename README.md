@@ -108,4 +108,12 @@ Eventos de domínio são importantes porque permitem que diferentes partes do si
 - Remover o segundo anexo que tinha sido criado previamente (delete)
 - Editar um anexo existente (update)
 
+### Estrutura
+initial   =   [1, 2, 3]
+new       =   [4, 5]
+removed   =   [2, 3]
+
+currentItens = [1, 4, 5]
+
+
 
