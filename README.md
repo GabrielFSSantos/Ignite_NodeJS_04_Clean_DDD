@@ -2,7 +2,7 @@
 
 Design dirigido à dominio
 
-### Domínio
+## Domínio
 - Domain Experts
   - Conversa
 
@@ -114,6 +114,23 @@ new       =   [4, 5]
 removed   =   [2, 3]
 
 currentItens = [1, 4, 5]
+
+
+## Subdminios
+### Core: O que dá dinheiro
+- Compra
+- Catálogo
+- Pagamento
+- Entrega
+
+### Supporting: Dá suporte para o Core funcionar
+- Estoque
+
+### Generic: Você precisa, mas não são tão importantes
+- Notificação ao cliente
+- Promoção
+- Chat
+
 
 
 
